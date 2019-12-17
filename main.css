@@ -6,24 +6,28 @@
 body {
   font-family: 'Courier New', Courier, monospace;
 }
-.container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 img {
   max-width: 100%;
 }
 main {
-  margin-top: 100px;
+  margin-top: 85px;
   display: block;
+}
+@media (max-width: 991px) {
+  main {
+    margin-top: 55px;
+  }
 }
 .logo-container {
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  .logo-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 .logo-container .logo {
   height: 70px;
@@ -31,12 +35,16 @@ main {
   position: relative;
   animation: logo 1s ease-out forwards;
 }
+@media (max-width: 991px) {
+  .logo-container .logo {
+    height: 50px;
+  }
+}
 .logo-container p {
   margin-bottom: 0;
   position: relative;
 }
 header {
-  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,13 +58,18 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+header .navbar {
+  width: 100%;
+  background-color: #fff;
 }
-header ul ul {
+header .navbar-nav li {
+  position: relative;
+  list-style: none;
+}
+header .navbar-nav li:hover ul {
+  visibility: visible;
+}
+header .navbar-nav ul {
   visibility: hidden;
   width: 200px;
   box-shadow: 1px 1px 6px #c7c7c7;
@@ -69,35 +82,17 @@ header ul ul {
   align-items: flex-start;
   justify-content: center;
 }
-header ul ul li {
-  margin-right: 0;
-}
-header ul ul li a {
-  padding: 5px 0;
-}
-header li {
-  margin-right: 25px;
-}
-header li:hover ul {
-  visibility: visible;
-}
-header li:hover > a {
-  color: #f17c3a;
-}
-header li.active {
-  border-bottom: 1px solid #f17c3a;
-}
-header li a {
-  text-decoration: none;
-  color: #000;
-  padding: 5px;
-  display: block;
-}
 .banner {
   width: 100%;
   background-image: url(https://shakhtar.com/~/media/fcsd/home/matchday-hub/1280_800_2019_new-home-kit.jpg);
   background-position: center top;
+  background-size: cover;
   height: 500px;
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 320px;
+  }
 }
 .section-padding {
   padding: 70px 0;
@@ -110,56 +105,39 @@ header li a {
 }
 h1,
 .h1 {
-  font-size: 60px;
-  font-weight: 300;
-  margin-bottom: 50px;
   color: #f17c3a;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 h2,
 .h2 {
-  font-size: 26px;
-  font-weight: 300;
-  margin-bottom: 20px;
   color: #f17c3a;
+  margin-bottom: 20px;
 }
 p {
   margin-bottom: 15px;
 }
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.column50 {
-  flex: 0 0 50%;
-  width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.column40 {
-  flex: 0 0 40%;
-  width: 40%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.column60 {
-  flex: 0 0 60%;
-  width: 60%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.mark {
+.list {
   list-style: none;
 }
-.mark li {
+.list li {
   font-size: 18px;
 }
 footer {
   background-color: #2b2b2b;
   color: #fff;
   padding: 50px;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 15px;
+  }
 }
 footer p {
   margin-bottom: 0;
@@ -219,4 +197,20 @@ footer p {
   width: 100%;
   height: 150px;
   background-position: center;
+}
+.showDesctop {
+  display: block;
+}
+@media (max-width: 991px) {
+  .showDesctop {
+    display: none;
+  }
+}
+.showMobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  .showMobile {
+    display: block;
+  }
 }
