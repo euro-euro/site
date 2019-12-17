@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" rel="stylesheet" />
+    <title>Матчі</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Main</a>
+                </li>
+                <li class="nav-item dropdown showMobile">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="nav-link" href="matches.html">Календар матчів</a>
+                    <a class="nav-link" href="#">Наступний матч</a>
+                    <a class="nav-link" href="#">Рейтинг</a>
+                  </div>
+                </li>
+                <li class="nav-item active showDesctop">
+                  <a class="nav-link" href="#">
+                    Matches
+                  </a>
+                  <ul>
+                    <li class="nav-item"><a class="nav-link" href="matches.html">Календар матчів</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Наступний матч</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Рейтинг</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fans.html">Fans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Admin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="logo-container">
+              <img
+                src="https://shakhtar.com/assets/images/global/logo.svg"
+                alt="logo"
+                class="logo"
+              />
+              <p class="animationBlock">
+                ФК «Шахтар» <br />
+                (Донецьк)
+              </p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner animationBlock"></div>
+      <div class="section-padding">
+        <div class="container">
+          <p class="h1" style="text-align: center;">
+            Розклад матчів
+          </p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col" style="white-space: nowrap;">Дата матчу</th>
+                  <th scope="col" style="white-space: nowrap;">
+                    Місце проведення
+                  </th>
+                  <th scope="col" style="white-space: nowrap;">Суперник</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+                <tr>
+                  <td>11/11/2019</td>
+                  <td>Арена спорт</td>
+                  <td>Реал Мадрид</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          © Футбольний клуб «Шахтар» (Донецьк), 1998-2019. Всі права захищені.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
