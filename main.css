@@ -214,3 +214,11 @@ footer p {
     display: block;
   }
 }
+.mb-30 {
+  margin-bottom: 30px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #f1853f;
+  border-color: #f17c3a;
+}
